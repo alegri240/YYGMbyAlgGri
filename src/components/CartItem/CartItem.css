@@ -1,0 +1,52 @@
+      .menu-item {
+          padding: 16px;
+          border-bottom: 1px dashed rgba(241, 240, 236, 0.24);
+          transition: background-color 0.2s ease;
+      }
+
+      .menu-item:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          cursor: pointer;
+      }
+
+      .menu-item .title {
+          display: flex;
+          align-items: baseline;
+          color: rgba(244, 243, 241, 0.94);
+          font-weight: 700;
+          font-size: 22px;
+          text-transform: uppercase;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      }
+
+      .menu-item .title .name {
+          flex-shrink: 0;
+      }
+
+      .menu-item .title .line {
+          flex-grow: 1;
+          border-bottom: 1px dashed rgba(244, 243, 241, 0.94);
+          margin: 0 8px;
+          height: 0;
+      }
+
+      .menu-item .title .line {
+          flex-grow: 1;
+          border-bottom: 1px dashed rgba(244, 243, 241, 0.94);
+          margin: 0 8px;
+          height: 0;
+
+      }
+
+      .menu-item .title .price {
+          flex-shrink: 0;
+      }
+
+      .menu-item .ingredients {
+          margin-top: 4px;
+          font-weight: 500;
+          font-size: 14px;
+          text-transform: lowercase;
+          color: rgba(244, 243, 241, 0.94);
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      }

@@ -1,0 +1,31 @@
+      .order-item {
+          display: flex;
+          align-items: baseline;
+          margin-bottom: 16px;
+          font-weight: 700;
+          font-size: 20px;
+          color: #333;
+          transition: background-color 0.2s ease;
+          padding: 8px;
+      }
+
+      .order-item:hover {
+          background-color: rgba(96, 88, 88, 0.1);
+          cursor: pointer;
+      }
+
+      .order-item .name {
+          flex-shrink: 0;
+          text-transform: uppercase;
+      }
+
+      .order-item .line {
+          flex-grow: 1;
+          border-top: 2px dotted #333;
+          margin: 0 8px;
+          height: 0;
+      }
+
+      .order-item .price {
+          flex-shrink: 0;
+      }

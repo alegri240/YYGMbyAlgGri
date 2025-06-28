@@ -1,0 +1,22 @@
+      .pay-button {
+          background: #2a2525;
+          color: white;
+          font-weight: 700;
+          font-size: 20px;
+          text-align: center;
+          padding: 20px;
+          margin: 0 8px 8px 8px;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      .pay-button:hover {
+          background: #000;
+      }
+
+      .error-message {
+          margin-top: 12px;
+          color: #f44336;
+          font-size: 14px;
+          text-align: center;
+      }

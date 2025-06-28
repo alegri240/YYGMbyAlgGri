@@ -1,0 +1,35 @@
+      .basket {
+          position: absolute;
+          top: 17px;
+          right: 16px;
+          width: 64px;
+          height: 64px;
+          background: rgba(244, 243, 241, 0.94);
+          border-radius: 4px;
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+          z-index: 1;
+      }
+
+      .basket img {
+          position: absolute;
+          top: 17px;
+          left: 17px;
+          width: 30px;
+          height: 30px;
+      }
+
+      .basket-counter {
+          position: absolute;
+          top: -4px;
+          right: -4px;
+          width: 24px;
+          height: 24px;
+          background: #EB5757;
+          color: rgba(244, 243, 241, 0.94);
+          border-radius: 50%;
+          font-family: "Ubuntu Mono", monospace;
+          font-size: 13px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }

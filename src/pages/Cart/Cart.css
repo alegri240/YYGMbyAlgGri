@@ -1,0 +1,44 @@
+      .order-container {
+          position: relative;
+          width: 390px;
+          height: 844px;
+          background: #eeeeee;
+          overflow: hidden;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .order-header {
+          position: relative;
+          height: 64px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 16px;
+          border-bottom: 1px solid #ccc;
+      }
+
+      .back-button {
+          width: 32px;
+          height: 32px;
+          cursor: pointer;
+          border: none;
+      }
+
+      .cartbasket {
+          width: 32px;
+          height: 32px;
+      }
+
+      .order-list {
+          flex: 1;
+          padding: 16px;
+          overflow-y: auto;
+      }
+
+      .order-list-end {
+          border-bottom: 1px solid #ccc;
+          margin-top: 8px;
+      }

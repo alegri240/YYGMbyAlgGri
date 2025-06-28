@@ -1,0 +1,142 @@
+      .receipt-container {
+          position: relative;
+          width: 390px;
+          height: 844px;
+          background: #605858;
+          border-radius: 8px;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 16px;
+      }
+
+      .logo {
+          position: absolute;
+          top: 16px;
+          left: 16px;
+          width: 64px;
+          height: 64px;
+      }
+
+      .receipt-box {
+          background: #eeeeee;
+          width: 326px;
+          border-radius: 4px;
+          padding: 16px 16px 0 16px;
+          /* ingen botten-padding */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 110px;
+          max-height: 600px;
+      }
+
+      .color-logo {
+          width: 41.74px;
+          height: 50.17px;
+          margin-bottom: 8px;
+      }
+
+      .receipt-title {
+          text-align: center;
+          font-weight: 700;
+          font-size: 24px;
+          margin-bottom: 4px;
+          color: #333;
+
+      }
+
+      .receipt-number {
+          font-size: 14px;
+          color: #333;
+          margin-bottom: 16px;
+          text-transform: uppercase;
+
+      }
+
+      .receipt-list {
+          flex: 1;
+          overflow-y: auto;
+          width: 100%;
+          margin-bottom: 12px;
+      }
+
+      .receipt-list::-webkit-scrollbar {
+          width: 6px;
+      }
+
+      .receipt-list::-webkit-scrollbar-track {
+          background: transparent;
+      }
+
+      .receipt-list::-webkit-scrollbar-thumb {
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 3px;
+      }
+
+      .receipt-list::-webkit-scrollbar-thumb:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      /* för firefox */
+      .receipt-list {
+          scrollbar-width: thin;
+          scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+      }
+
+      .receipt-total {
+          width: 100%;
+          background: rgba(53, 49, 49, 0.24);
+          padding: 16px;
+          border-radius: 4px;
+          color: #000;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          /* centrerar vertikalt */
+      }
+
+      .receipt-total .amounts {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          font-weight: 700;
+          font-size: 16px;
+          /* TOTALT texten */
+      }
+
+      .receipt-total .amount-value {
+          font-size: 24px;
+      }
+
+      .receipt-total .tax {
+          margin-top: 4px;
+          font-size: 12px;
+          text-align: left;
+          font-weight: 400;
+          align-self: flex-start;
+      }
+
+      .receipt-button {
+          margin-top: auto;
+          margin-bottom: 16px;
+      }
+
+      .receipt-button button {
+          width: 358px;
+          height: 77px;
+          background: #2a2525;
+          color: white;
+          font-weight: 700;
+          font-size: 18px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.2s ease;
+      }
+
+      .receipt-button button:hover {
+          background: #000;
+      }
