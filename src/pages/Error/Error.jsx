@@ -1,13 +1,12 @@
-import React from "react";
 import "./Error.css";
 
 function Error() {
   return (
     <div className="error-container">
       <h1 className="error-code">404</h1>
-      <p className="error-message">Page Not Found</p>
+      <p className="error-message">Opps vi hittade inte den efterfrågade sidan.</p>
       <a href="/" className="error-link">
-        Error Go back to Home
+        Tillbaka till menyn
       </a>
     </div>
   );

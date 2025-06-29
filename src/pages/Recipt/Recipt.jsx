@@ -5,6 +5,7 @@ import logo from '/logo.png'
 import colorlogo from '/colorlogo.png'
 import { useGetReceiptQuery } from '../../api/apiSlice';
 import ReceiptItem from '../../components/ReceiptItem/ReceiptItem';
+import ReceiptTotal from '../../components/ReceiptTotal/ReceiptTotal';
 
 function Recipt() {
 
@@ -32,13 +33,7 @@ function Recipt() {
           <div className="receipt-list">
             {receiptItems}
           </div>
-          <div className="receipt-total">
-            <div className="amounts">
-              <span>TOTALT</span>
-              <span className="amount-value">{orderData.receipt.orderValue} SEK</span>
-            </div>
-            <div className="tax">inkl moms 12%</div>
-          </div>
+          <ReceiptTotal total={orderData.receipt.orderValue} />
         </div>
         <div className="receipt-button">
           <button onClick={() => navigate('/')}>GÖR EN NY BESTÄLLNING</button>

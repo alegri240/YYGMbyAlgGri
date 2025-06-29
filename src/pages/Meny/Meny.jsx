@@ -4,29 +4,19 @@ import { useGetMenuQuery } from '../../api/apiSlice';
 import MiniCart from '../../components/MiniCart/MiniCart';
 import CartItem from '../../components/CartItem/CartItem';
 import CartItemOptions from '../../components/CartItemOptions/CartItemOptions';
+import { groupItemsByPrice } from "./Meny";
 
 function Meny() {
     const { data: menyData, isLoading, isError } = useGetMenuQuery();
+
+    if (isLoading) return <p>Laddar...</p>;
+    if (isError) return <p>Det gick inte att hämta menyn. Försök om en stund.</p>;
 
     const wontonList = menyData?.items
         .filter((w) => w.type === "wonton")
         .map((w) => {
             return <CartItem key={w.id} data={w} />
         });
-
-    if (isLoading) return <p>Laddar...</p>;
-    if (isError) return <p>Det gick inte att hämta menyn. Försök om en stund.</p>;
-
-    function groupItemsByPrice(items, type) {
-        return items
-            ?.filter((item) => item.type === type)
-            .reduce((groups, item) => {
-                const price = item.price;
-                if (!groups[price]) groups[price] = [];
-                groups[price].push(item);
-                return groups;
-            }, {});
-    }
 
     const dipByPrice = groupItemsByPrice(menyData?.items, "dip");
     const drinkByPrice = groupItemsByPrice(menyData?.items, "drink");

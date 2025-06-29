@@ -24,7 +24,6 @@
           width: 326px;
           border-radius: 4px;
           padding: 16px 16px 0 16px;
-          /* ingen botten-padding */
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -79,44 +78,9 @@
           background-color: rgba(0, 0, 0, 0.5);
       }
 
-      /* för firefox */
       .receipt-list {
           scrollbar-width: thin;
           scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
-      }
-
-      .receipt-total {
-          width: 100%;
-          background: rgba(53, 49, 49, 0.24);
-          padding: 16px;
-          border-radius: 4px;
-          color: #000;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          /* centrerar vertikalt */
-      }
-
-      .receipt-total .amounts {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
-          font-weight: 700;
-          font-size: 16px;
-          /* TOTALT texten */
-      }
-
-      .receipt-total .amount-value {
-          font-size: 24px;
-      }
-
-      .receipt-total .tax {
-          margin-top: 4px;
-          font-size: 12px;
-          text-align: left;
-          font-weight: 400;
-          align-self: flex-start;
       }
 
       .receipt-button {

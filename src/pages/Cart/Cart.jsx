@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import CartItemView from '../../components/CartItemView/CartItemView';
 import TotalBar from '../../components/TotalBar/TotalBar';
 import CreateOrder from '../../components/CreateOrder/CreateOrder';
+
 function Cart() {
   const cart = useSelector(state => state.cart);
   let navigate = useNavigate();
@@ -33,4 +34,5 @@ function Cart() {
     </>
   );
 }
+
 export default Cart;
