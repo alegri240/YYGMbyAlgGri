@@ -23,9 +23,9 @@ function Eta() {
         <div className="status-text">DINA WONTONS<br/>TILLAGAS!</div>
         <EtaTime />
         <div className="order-number">#{order}</div>
-        <div className="buttons">
-          <button className="primary" onClick={() => navigate('/')}>GÖR EN NY BESTÄLLNING</button>
-          <button className="secondary" onClick={() => navigate('/recipt')}>SE KVITTO</button>
+        <div className="order-buttons">
+          <button className="order-new" onClick={() => navigate('/')}>GÖR EN NY BESTÄLLNING</button>
+          <button className="order-view-rec" onClick={() => navigate('/recipt')}>SE KVITTO</button>
         </div>
       </div>
     </>

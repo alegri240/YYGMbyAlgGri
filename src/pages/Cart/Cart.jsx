@@ -25,7 +25,7 @@ function Cart() {
         </div>
         <div className="order-list">
           {cartItems}
-          <div className="order-list-end"></div>
+          {cart.length > 0 && <div className="order-list-end"></div>}
         </div>
         <TotalBar />
         <CreateOrder />
